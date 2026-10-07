@@ -1,0 +1,292 @@
+ * {
+            box-sizing: border-box;
+        }
+        :root{
+            --blue-color: #0b3156;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d233a;
+        }
+
+        nav {
+            width: 100%;
+            height: 70px;
+            background-color:--blue-color;
+            display: flex;
+            align-items: center;
+        }
+
+        nav .one {
+            width: 30%;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav .two {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav .two ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        nav .two a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+        }
+
+        nav .two a:hover {
+            color: goldenrod;
+            transition: 0.3s;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 480px;
+            padding-top: 20px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .header-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        
+        header h1,
+        header h2,
+        header p,
+        header button {
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 40px;
+            padding-left: 50px;
+            color: goldenrod;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header h2 {
+            padding-left: 50px;
+            font-size: 26px;
+            color: rgb(252, 233, 115);
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            padding-left: 50px;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+            line-height: 1.5;
+        }
+
+        header button {
+            padding: 10px 20px;
+            margin-left: 50px;
+            border-radius: 32px;
+            border: none;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        header button a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            transition: 0.5s ease-in-out;
+        }
+
+        header button:hover {
+            background-color: #0b3156;
+            transition: 0.3s;
+            padding:12px 22px;
+        }
+
+        header button:hover a {
+            color: white;
+        }
+
+        .second-container {
+            width: 100%;
+        }
+
+        .second-one {
+            width: 100%;
+            padding: 20px 0;
+            background-color:--blue-color;
+            color: goldenrod;
+            text-align: center;
+        }
+
+        .second-one h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .second-button {
+            width: 100%;
+            padding: 15px 0;
+            background-color:--blue-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .second-button button {
+            padding: 8px 20px;
+            border-radius: 32px;
+            border: 2px solid goldenrod;
+            background: white;
+            cursor: pointer;
+        }
+
+        .second-button button a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .second-button button:hover {
+            background-color: rgb(241, 205, 112);
+            transition: 0.3s;
+            padding:9px 20px;
+            
+        }
+
+        .page-up,
+        .page-down {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 220px;
+            height: 280px;
+            background-color:--blue-color;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .card .image {
+            width: 100%;
+            height: 65%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card .matter {
+            height: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .card button {
+            padding: 5px 15px;
+            border-radius: 15px;
+            border: none;
+            background-color: #f8b401;
+            cursor: pointer;
+
+        }
+        .card button:hover{
+            padding:8px 18px;
+            transition: 0.1s;
+        }
+
+        .card button a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .image-one {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5OWzE9e-dVjWKmlFe41_sW3Z4lY3wqG4QrXI7N6jwQ&s=10");
+        }
+
+        .image-two {
+            background-image: url("https://www.popsci.com/uploads/2024/02/21/humpback-whale-calf.png?auto=webp");
+        }
+
+        .image-three {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9TqWYj4izxHXPIKOj1zL6wdUF_mxFK8M9atbq-scP9w&s=10");
+        }
+
+        .image-four {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB4z-EVg7Gy0wH41g6abQ7phbiKFzQXtZaBxMDVsBJuw&s=10");
+        }
+
+        .image-five {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQupf1R_WUdgwOTaUezqlUcOWxeiEq46nwtJPmTOxhtSg&s=10");
+        }
+
+        .image-six {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5kgdcCu5KoWtckPgKeiOjUFZQtbrHLn9LaywjWt5jkQ&s=10");
+        }
+
+        .image-seven {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8cW4yhKaxZVB4penue75nQp4MjpneSs2RTggmdRSHw&s=10");
+        }
+
+        .image-eight {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFoAYRE36X5-AnTA8PVsGsv7F43ANpmQX906vhx_d1qA&s=10");
+        }
+
+        .image-nine {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxOso0EB0b7aLgSbqeLyNmNzbf6ix7QTLb6hjgf99Ceg&s=10");
+        }
+
+        .image-ten {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStTtW24JQ9RuDy8PbK0qL-Tvy1zhUjo0LSDvajBtKGaQ&s=10");
+        }
+        .image:hover{
+            width:240px;
+            height:300px;
+            transition: 0.5s ;
+        }
